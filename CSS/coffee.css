@@ -131,8 +131,13 @@ header > .wrapper {
 .feature-part > img {
     width: 100%;
     width: 300px;
+    cursor: pointer;
+    transition: 0.5s;
 }
 
+.feature-part > img:hover {
+    transform: scale(1.5);
+}
 .indi {
     display: flex;
     align-items: center;
@@ -142,6 +147,12 @@ header > .wrapper {
 .indi > img {
     width: 50px;
     margin-right: 0.2rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.indi > img:hover {
+    transform: scale(1.8);
 }
 
 /*End of coffee feature section */
