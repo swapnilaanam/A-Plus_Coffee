@@ -1,0 +1,358 @@
+/*Base Styling*/
+
+html {
+    box-sizing: border-box;
+    font-family: cursive;
+    font-size: 18px;
+}
+
+*,::before,::after {
+    box-sizing: inherit;
+    font-family: inherit;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+}
+
+h2 {
+    color: black;
+}
+
+.wrapper {
+    width: 96%;
+    padding: 0 2%;
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Base Styling */
+
+body {
+    margin: 0;
+}
+
+/*Start of header Styling */
+
+header {
+    width: 100%;
+}
+
+header > .wrapper {
+    width: 98%;
+    padding: 0 2%;
+    justify-content: space-between;
+}
+
+
+#navbar {
+    display: flex;
+}
+
+#navbar a {
+    margin: 0 0 0 2rem;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: brown;
+    text-transform: uppercase;
+}
+
+#coffee-banner {
+    background: url(https://lehman-webdev.github.io/project-1-coffee-shop/images/turquoise-cup-with-coffee-beans-on-a-wooden-8LF7PD5.jpg) no-repeat center/cover;
+    background-attachment: fixed;
+    min-height: 65vh;
+}
+/*End of header styling*/
+
+/*Start of coffee-feature section */
+
+
+#coffee-feature {
+    width: 100%;
+    padding: 2rem 0;
+}
+
+#feature-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#feature-header > * {
+    padding: 1rem 0;
+}
+
+#feature-header > img {
+    width: 300px;
+    align-self: center;
+}
+
+#feature-header h1 {
+    font-size: 2.8em;
+}
+
+#feature-header > p {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#all-feature { 
+    width: 100%;
+    display: flex;
+    max-width: 1600px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-part {
+    flex-basis: 33%;
+    margin: 0 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feature-part > img {
+    width: 100%;
+    width: 300px;
+}
+
+.indi {
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.indi > img {
+    width: 50px;
+    margin-right: 0.2rem;
+}
+
+/*End of coffee feature section */
+
+/*Start of customer banner */
+
+#customer-banner {
+    background: url('https://lehman-webdev.github.io/project-1-coffee-shop/images/laughing-young-african-woman-drinking-fresh-GPJTELV.jpg') no-repeat center/cover;
+    background-attachment: fixed;
+    padding-top: 350px;
+    padding-bottom: 200px;
+    background-size: 100%;
+}
+
+/*End of customer banner */
+
+/*Start of footer */
+
+footer {
+    background: black;
+    color: white;
+    padding: 2rem 0;
+}
+
+footer > .wrapper {
+    align-items: flex-start;
+}
+
+.box {
+    flex-basis: 32% !important;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.box > * {
+    padding: 1.5rem 0;
+}
+
+footer .box > h2 {
+    color: white;
+}
+
+.box1 {
+    padding-left: 200px;
+}
+
+.box2 {
+    margin-right: 120px;
+    height: 450px;
+    width: 600px;
+}
+
+.box3 > img {
+    width: 200px;
+    height: auto;
+}
+
+/*End of footer styling */
+
+
+/*Media Quries */
+
+@media (max-width:1200px) and (min-width:992px) {
+    footer > .wrapper {
+        flex-wrap: wrap;
+    }
+    .box, .box1, .box2 {
+        flex-basis: 48%;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+    .box3 {
+        flex-basis: 98%;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    header > .wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #navbar {
+        padding: 0;
+        margin-left: -2rem;
+        padding: 1rem 0;
+    }
+
+
+    #all-feature {
+        flex-wrap: wrap;
+    }
+
+    .feature-part {
+        flex-basis: 48%;
+    }
+
+    .feature-middle {
+        order: -1;
+        flex-basis: 98%;
+    }
+
+    .indi {
+        flex-direction: column;
+    }
+
+    footer > .wrapper {
+        flex-wrap: wrap;
+    }
+    .box, .box1, .box2 {
+        flex-basis: 48%;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+    .box3 {
+        flex-basis: 98%;
+    }
+}
+
+@media (max-width: 767px) {
+    header > .wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #navbar {
+        padding: 0;
+        margin-left: -2rem;
+        padding: 1rem 0;
+    }
+
+
+    #all-feature {
+        flex-wrap: wrap;
+    }
+
+    .feature-part {
+        flex-basis: 98%;
+    }
+
+    .feature-middle {
+        order: -1;
+        flex-basis: 98%;
+    }
+
+    .indi {
+        flex-direction: column;
+    }
+
+    #customer-banner {
+        padding-top:200px;
+        padding-bottom: 100px;
+        background-size: cover;
+    }
+
+    footer > .wrapper {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .box, .box1, .box2 {
+        flex-basis: 98%;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        align-self: center;
+    }
+
+    .box2 {
+        width: 25rem;
+    }
+    .box2 > iframe {
+        width: 350px;
+    }
+    .box3 {
+        flex-basis: 98%;
+    }
+}
+
+@media (max-width: 477px) {
+
+    #logo > img {
+        width: 100%;
+    }
+
+    #navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #navbar > li{
+        padding: 0.5rem 0;
+    }
+
+    #feature-header > img {
+        width: 200px;
+    }
+
+    .feature-middle > img {
+        width: 200px;
+    }
+
+    .box2 {
+        width: 10rem;
+    }
+
+    .box2 > iframe {
+        width: 250px;
+        height: 350px;
+    }
+
+}
