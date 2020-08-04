@@ -1,3 +1,6 @@
+/*Home Page */
+/*         */
+
 /*Base Styling*/
 
 html {
@@ -213,6 +216,137 @@ footer .box > h2 {
 
 /*End of footer styling */
 
+/* Home Page */
+
+/*   End    */
+
+
+/* Menu Page */
+
+/*  Start  */
+
+#menu-banner {
+    background: url(https://lehman-webdev.github.io/project-1-coffee-shop/images/turquoise-cup-with-coffee-beans-on-a-wooden-8LF7PD5.jpg) no-repeat center/cover;
+    min-height: 65vh;
+    background-attachment: scroll;
+}
+
+#menu-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    background: brown;
+    opacity: 0.95;
+    color: white;
+    padding: 0.5rem 0;
+}
+
+.menu {
+    padding: 8rem 0;
+}
+
+#Menu-table {
+    width: 96%;
+    padding: 0 2%;
+    border: 2.5px solid black;
+    max-width: 900px;
+    margin: 0 auto;
+    background: #c19191;
+    border-collapse: collapse;
+    border-spacing: 0px;
+    text-transform: uppercase;
+    box-shadow: 0 0 50px black;
+}
+
+#Menu-table > thead {
+    font-size: 1.3em;
+}
+
+#Menu-table > tbody {
+    border: 0;
+}
+
+#Menu-table tr {
+    padding: 10rem 0;
+    text-align: center;
+    height: 10vh;
+}
+
+#Menu-table >tbody tr:nth-child(odd) {
+    background: #aa7070;
+}
+
+#Menu-table >tbody tr:nth-child(even) {
+    background: #8b5d5d;
+}
+
+#Menu-table > tbody > tr > td {
+    border: 0;
+    border-collapse: collapse;
+    border-spacing: 0px;
+}
+
+tbody > tr > td:first-child {
+    font-weight: bold;
+}
+
+
+/* Menu Page */
+
+/*  End */
+
+/* About Page */
+
+/*Start */
+
+.about-main-header {
+    border-bottom: 3.5px solid black;
+}
+
+#about-banner {
+    background: url(https://lehman-webdev.github.io/project-1-coffee-shop/images/aerial-view-of-various-coffee-PAYVEGL.jpg) no-repeat center/cover;
+    min-height: 95vh;
+    background-attachment: fixed;
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.445);
+    min-height: 95vh;
+    text-align: center;
+    font-size: 1.7em;
+}
+
+#about > img {
+    margin-top: 0.5rem;
+    align-self: center;
+    transform: translateX(-30px);
+}
+
+#about-us {
+    background: #905858;
+    padding: 5rem;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+#about-us > p {
+    width: 96%;
+    padding: 0 2%;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 1.3em;
+    line-height: 2.2;
+}
+
+/* About Page */
+
+/*End */
+
 
 /*Media Quries */
 
@@ -364,6 +498,31 @@ footer .box > h2 {
     .box2 > iframe {
         width: 250px;
         height: 350px;
+    }
+
+    /*Menu Page */
+
+    #Menu-table > thead {
+        display: none;
+    }
+
+    #Menu-table > tbody td {
+        display: block;
+        position: relative;
+        padding-left: 50%;
+        text-align: right;
+        padding-right: 10px;
+        margin: 2rem 0;
+    }
+
+    #Menu-table > tbody td::before {
+        content: attr(data-title);
+        position: absolute;
+        left: 0;
+        width: 55%;
+        padding-left: 15px;
+        text-align: left;
+        font-weight: bold;
     }
 
 }
