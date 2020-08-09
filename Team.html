@@ -7,7 +7,7 @@
     </head>
     <body>
         <!--Start of header-->
-        <header class="about-main-header">
+        <header>
             <nav class="wrapper">
                 <div id="logo">
                     <img src="https://lehman-webdev.github.io/project-1-coffee-shop/images/coffeelogo11.png" 
@@ -23,27 +23,49 @@
         </header>
         <!--End Of Header-->
 
-        <!--Start of About Banner -->
-        <div id="about-banner">
-            <div id="about">
-                <h1 id="about-header">The A+ Mission</h1>
-                <img src="https://lehman-webdev.github.io/project-1-coffee-shop/images/coffee-beans-icon.png">
+        <!--Start of Team-->
+        <div id="team">
+            <div id="wrapper">
+                <h1>Meet The Team</h1>
+                <div id="all-members">
+                    <div class="member">
+                        <img src="https://lehman-webdev.github.io/project-1-coffee-shop/images/dana-portrait.jpg">
+                        <h3>Dana Jackson</h3>
+                        <p>Manager at A+ Coffee. Specializes in latte and tea.</p>
+                    </div>
+                    <div class="member">
+                        <img src="https://lehman-webdev.github.io/project-1-coffee-shop/images/hydeia-portrait.jpeg">
+                        <h3>Hydeia Blakey</h3>
+                        <p>Supervisor at A+ Coffee. Director of health and dietary goals.</p>
+                    </div>
+                    <div class="member">
+                        <img src="https://lehman-webdev.github.io/project-1-coffee-shop/images/lucero-portrait.jpg">
+                        <h3>Lucero Luna Miranda</h3>
+                        <p>Manager at A+ Coffee. Specializes in vegan/vegetarian pastries and bubble tea.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="social-links">
+                <img src="https://lehman-webdev.github.io/project-1-coffee-shop/images/GitHub-Mark-120px-plus.png">
+                <img src="https://lehman-webdev.github.io/project-1-coffee-shop/images/GitHub-Mark-120px-plus.png">
+                <img src="https://lehman-webdev.github.io/project-1-coffee-shop/images/GitHub-Mark-120px-plus.png">
             </div>
         </div>
-        <!--End Of About Banner-->
-
-
-        <!--Start of about us-->
-
-        <div id="about-us">
-            <p>Our mission isn't just to provide you with the best darn coffee your taste buds can enjoy
-                but to do so in an <u>eco friendly manner</u>.<br>
-                Yes you heard it right folks! All of our coffee cups are disposable, sustainable and compostable.
-                Who knew saving the planet could taste this good
-                Cheers! ☕</p>
+        <!--End of team-->
+        <div id="contact">
+            <form id="contact-form">
+                <h2>Contact us</h2>
+                <Label for="fname">First Name</Label>
+                <input type="text" name="fname" placeholder="First Name">
+                <Label for="lname">Last Name</Label>
+                <input type="text" name="lname" placeholder="Last Name">
+                <Label for="email">Email Address</Label>
+                <input type="email" name="email" placeholder="Email">
+                <Label for=message>Subject</Label>
+                <textarea placeholder="Write message here"></textarea>
+                <input type="submit" value="Submit">
+            </form>
         </div>
-
-        <!--End of about us-->
 
         <!--Start of footer-->
         <footer>
